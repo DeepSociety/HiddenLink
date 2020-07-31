@@ -1,0 +1,115 @@
+#Create by https://github.com/HiddenSt4r
+#Si copias deja creditos😛
+
+trap bye EXIT
+v="\e[1;92m"
+b="\e[1;39m"
+a="\e[0;32m"
+r="\e[1;91m"
+
+bye(){
+echo -e "\n$v[$b*$v]$b HiddenLink by HiddenStar😛
+$v[$b*$v]$b https://github.com/HiddenSt4r
+"
+}
+
+banner(){
+echo -e "$v"
+echo -e '
+  ___ ___ .__    .___  .___             
+ /   |   \|__| __| _/__| _/____   ____  
+/    ~    \  |/ __ |/ __ |/ __ \ /    \ 
+\    Y    /  / /_/ / /_/ \  ___/|   |  \
+ \___|_  /|__\____ \____ |\___  >___|  /
+       \/         \/    \/    \/     \/ 
+.____    .__        __                  
+|    |   |__| ____ |  | __ \e[1;92mcreate\e[1;39m by HiddenStar😛
+|    |   |  |/    \|  |/ /              
+|    |___|  |   |  \    <               
+|_______ \__|___|  /__|_ \              
+        \/       \/     \/              
+\e[1;92m[\e[1;39m*\e[1;92m]\e[1;39m https://github.com/HiddenSt4r/HiddenLink \e[1;92m[\e[1;39m*\e[1;92m]
+'
+}
+
+links(){
+google="${a}https://www.google.com/url?q=$link"
+via="${a}https://via.hypothes.is/$link"
+fb="${a}https://facebook.com/l.php?u=$link"
+vk="${a}http://vk.com/away.php?to=$link"
+google1="${a}https://google.com/url?q=$link"
+googlew="${a}https://googleweblight.com/i?u=$link"
+googlegw="${a}http://google.com/gwt/x?wsc=eb&u=$link"
+duck="${a}https://duckduckgo.com/y.js?u3=$link"
+duck1="${a}https://duckduckgo.com/l/?kh=-1&uddg=$link"
+onion="${a}https://3g2upl4pq6kufc4m.onion/y.js?u3=$link"
+onion1="${a}https://3g2upl4pq6kufc4m.onion/l/?kh=-1&uddg=$link"
+ahmia="${a}https://ahmia.fi/search/search/redirect?search_term=cat&redirect_url=$link"
+msy="${a}http://msydqstlz2kzerdg.onion/search/search/redirect?search_term=cat&redirect_url=$link"
+hay="${a}http://haystakvxad7wbk5.onion/redir.php?url=$link"
+lwl="${a}http://l.wl.co/l?u=$link"
+proxy="${a}https://proxy-02.onionsearchengine.com/index.php?q=$link"
+proxy1="${a}https://proxy-02.onionsearchengine.com/url.php?u=$link"
+rduck="${a}https://r.duckduckgo.com/l/?kh=-1&uddg=$link"
+rduck1="${a}https://r.duckduckgo.com/y.js?u3=$link"
+r3="${a}http://r.3g2upl4pq6kufc4m.onion/y.js?u3=$link"
+r2="${a}http://r.3g2upl4pq6kufc4m.onion/l/?kh=-1&uddg=$link"
+googlecom="${a}http://google_competitions_for_college_students@$link2"
+fbled="${a}http://facebook_led_ai_research_for_indian_college_students@$link2"
+micro="${a}http://learn_microsoft_free_certifications@$link2"
+}
+
+menu(){
+clear
+banner
+echo -e "$v[$b*$v]$b Inserta el link:"
+read -p ">> " link
+if [[ $link == "" ]];then
+menu
+else
+if echo "$link" | grep -o "http://\|https://" ;then
+AEA="XD"
+else
+link="https://$link"
+fi
+link2=$(echo $link | cut -d "/" -f3)
+links
+echo -e "\n$v[$b*$v]$b Google: $google\n
+$v[$b*$v]$b VIA: $via\n
+$v[$b*$v]$b Facebook: $fb\n
+$v[$b*$v]$b vk: $vk\n
+$v[$b*$v]$b Google1: $google1\n
+$v[$b*$v]$b Google2: $googlew\n
+$v[$b*$v]$b Google3: $googlegw\n
+$v[$b*$v]$b DuckDuckGo: $duck\n
+$v[$b*$v]$b DuckDuckGo1: $duck1\n
+$v[$b*$v]$b DuckDuckGo2: $rduck\n
+$v[$b*$v]$b DuckDuckGo3: $rduck1\n
+$v[$b*$v]$b Onion: $onion\n
+$v[$b*$v]$b Onion1: $onion1\n
+$v[$b*$v]$b Onion2: $msy\n
+$v[$b*$v]$b Onion3: $hay\n
+$v[$b*$v]$b Onion4: $r3\n
+$v[$b*$v]$b Onion5: $r2\n
+$v[$b*$v]$b Ahmia: $ahmia\n
+$v[$b*$v]$b l.wl: $lwl\n
+$v[$b*$v]$b Proxy: $proxy\n
+$v[$b*$v]$b Proxy1: $proxy1\n
+$v[$b*$v]$b Google4: $googlecom\n
+$v[$b*$v]$b Facebook1: $fbled\n
+$v[$b*$v]$b Microsoft: $micro
+\n$v[$b*$v]$b Deseas continuar?(y/n)"
+read -p ">> " cn
+if [[ $cn == "y" || $cn == "Y" ]];then
+menu
+elif [[ $cn == "n" || $cn == "N" ]];then
+exit 1
+else
+echo -e "$r[!]$b Opción invalida"
+sleep 1
+menu
+fi
+fi
+}
+
+menu
