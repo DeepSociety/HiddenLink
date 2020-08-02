@@ -1,4 +1,4 @@
-#Create by https://github.com/HiddenSt4r
+#Create by https://github.com/DeepSociety
 #Si copias deja creditos😛
 
 trap bye EXIT
@@ -8,8 +8,8 @@ a="\e[0;32m"
 r="\e[1;91m"
 
 bye(){
-echo -e "\n$v[$b*$v]$b HiddenLink by HiddenStar😛
-$v[$b*$v]$b https://github.com/HiddenSt4r
+echo -e "\n$v[$b*$v]$b HiddenLink by DeepSociety
+$v[$b*$v]$b https://github.com/DeepSociety
 "
 }
 
@@ -23,12 +23,12 @@ echo -e '
  \___|_  /|__\____ \____ |\___  >___|  /
        \/         \/    \/    \/     \/ 
 .____    .__        __                  
-|    |   |__| ____ |  | __ \e[1;92mcreate\e[1;39m by HiddenStar😛
+|    |   |__| ____ |  | __ \e[1;92mcreate\e[1;39m by DeepSociety
 |    |   |  |/    \|  |/ /              
 |    |___|  |   |  \    <               
 |_______ \__|___|  /__|_ \              
         \/       \/     \/              
-\e[1;92m[\e[1;39m*\e[1;92m]\e[1;39m https://github.com/HiddenSt4r/HiddenLink \e[1;92m[\e[1;39m*\e[1;92m]
+\e[1;92m[\e[1;39m*\e[1;92m]\e[1;39m https://github.com/DeepSociety/HiddenLink \e[1;92m[\e[1;39m*\e[1;92m]
 '
 }
 
